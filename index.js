@@ -104,7 +104,7 @@ function renderCities() {
         }).then(function(response5day) { 
             $("#boxes").empty();
             console.log(response5day);
-            for(var i=0, j=0; j<=5; i=i+6){
+            for(var i=0, j=0; j<=4; i=i+7){
                 var read_date = response5day.list[i].dt;
                 if(response5day.list[i].dt != response5day.list[i+1].dt){
                     var FivedayDiv = $("<div>");
